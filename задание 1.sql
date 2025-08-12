@@ -1,4 +1,4 @@
-CALL sp_calculate_salary(5, 2025);
+CALL sp_calculate_salary(5, 2025);  -- Расчет за 5 месяц 2025 года 
 
 CREATE OR REPLACE PROCEDURE sp_calculate_salary (
     p_month INT,  -- Месяц (1-12)
@@ -136,3 +136,4 @@ BEGIN
     RAISE NOTICE 'Зарплата за %-% успешно рассчитана', p_month, p_year;
 END;
 $$;
+
